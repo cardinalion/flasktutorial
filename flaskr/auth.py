@@ -24,7 +24,7 @@ def register():
         if not username:
             error = 'Username is required.'
         elif not password:
-            error = 'Password is required'
+            error = 'Password is required.'
         # ? placeholder, (,) tuple values
         # return one row from the query, or None
         elif db.execute(
@@ -61,7 +61,7 @@ def login():
         if user is None:
             error = 'Incorrect username.'
         elif not check_password_hash(user['password'], password):
-            error = 'Incorrcet password.'
+            error = 'Incorrect password.'
 
         if error is None:
             # dict storing data across requests
