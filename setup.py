@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='flaskr',
-    version='1.0.0',
+    version='1.0.2',
     # what directories to include Python files
     # finds these directories automatically
     packages=find_packages(),
